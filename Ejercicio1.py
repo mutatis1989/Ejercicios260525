@@ -106,4 +106,18 @@ def main_ejercicio1():
     for i, curso_notas in enumerate(arreglo_notas):
         print(f"Curso {i+1}: {curso_notas}")
 
-    # Cada una de las opciones mencionadas debe ser creada en un subpro
+    # Cada una de las opciones mencionadas debe ser creada en un subproceso
+    # Calcular promedio de todos los estudiantes
+    calcular_promedio_total(arreglo_notas)
+
+    # Calcular promedio por grupo
+    calcular_promedio_por_grupo(arreglo_notas)
+
+    # Porcentaje de aprobados por grupo
+    porcentaje_aprobados_por_grupo(arreglo_notas)
+
+    # Nota mayor y menor por grupo
+    nota_mayor_menor_por_grupo(arreglo_notas)
+
+if __name__ == "__main__":
+    main_ejercicio1()
